@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FB Clean</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="brand">
+        <img src="../icons/icon48.png" alt="" width="28" height="28" />
+        <div>
+          <h1>FB Clean</h1>
+          <p>Tùy chỉnh giao diện Facebook</p>
+        </div>
+      </div>
+      <label class="master">
+        <span>Bật tất cả mặc định</span>
+        <button type="button" id="btn-defaults" class="linkish">Đặt lại</button>
+      </label>
+    </header>
+
+    <main class="list" id="toggles">
+      <label class="row">
+        <div>
+          <strong>Ẩn tin (Stories)</strong>
+          <span>Thanh tin trên đầu bảng tin</span>
+        </div>
+        <input type="checkbox" data-key="hideStories" />
+      </label>
+
+      <label class="row">
+        <div>
+          <strong>Ẩn quảng cáo</strong>
+          <span>Bài «Được tài trợ» / Sponsored</span>
+        </div>
+        <input type="checkbox" data-key="hideAds" />
+      </label>
+
+      <label class="row">
+        <div>
+          <strong>Ẩn Reels</strong>
+          <span>Mục Reels trên menu và trong feed</span>
+        </div>
+        <input type="checkbox" data-key="hideReels" />
+      </label>
+
+      <label class="row">
+        <div>
+          <strong>Ẩn cột phải</strong>
+          <span>Contacts, quảng cáo sidebar…</span>
+        </div>
+        <input type="checkbox" data-key="hideRightRail" />
+      </label>
+
+      <label class="row">
+        <div>
+          <strong>Ẩn khung chat</strong>
+          <span>Popup Messenger góc phải</span>
+        </div>
+        <input type="checkbox" data-key="hideChat" />
+      </label>
+
+      <label class="row">
+        <div>
+          <strong>Ẩn bảng tin</strong>
+          <span>Chế độ tập trung — ẩn toàn bộ feed</span>
+        </div>
+        <input type="checkbox" data-key="hideHomeFeed" />
+      </label>
+
+      <label class="row">
+        <div>
+          <strong>Ẩn gợi ý</strong>
+          <span>Nhóm / người bạn có thể biết</span>
+        </div>
+        <input type="checkbox" data-key="hideGroupsSuggestions" />
+      </label>
+
+      <label class="row">
+        <div>
+          <strong>Ẩn Watch</strong>
+          <span>Lối tắt Video / Watch trên menu</span>
+        </div>
+        <input type="checkbox" data-key="hideWatch" />
+      </label>
+    </main>
+
+    <footer class="footer">
+      <span id="status">Đang tải…</span>
+      <span>Làm mới tab Facebook nếu chưa thấy thay đổi</span>
+    </footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
